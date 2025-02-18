@@ -1,18 +1,16 @@
 # Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols
 <p align="center">
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/f64f4a5b-bc43-4cd8-acfd-20bc707d00aa"/>
+![1](https://github.com/user-attachments/assets/bf2b826d-d6d6-44e3-b1a8-49d50d2f0673"
+
 </p>
 <p align="center">
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/f5f49e52-5670-4340-8351-ba4e5d54b343"/>
+![2](https://github.com/user-attachments/assets/70c09387-d538-44f7-aca3-a66e9251e431"
+
 </p>
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
 In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
 
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: Lab 2 :  Configuring On premises Active Directory within Azure VMs](https://youtu.be/1EPNPQBD2os)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -46,7 +44,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Actions and Observations</h2>
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/eafc0d88-04d2-45ed-9a1a-828545d2b543"/>
+![3](https://github.com/user-attachments/assets/dee6b27c-1f5a-43a5-9be2-09fbe169fc06"
+
 </p>
 <p>
 First go to Microsoft Azure and type Resource Groups in the search bar
@@ -54,7 +53,8 @@ First go to Microsoft Azure and type Resource Groups in the search bar
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/180c4847-c7ac-444f-bf10-9c196cd39753"/>
+![4](https://github.com/user-attachments/assets/59132714-37ad-46b0-b26e-e8c265048041"
+
 </p>
 <p>
 Next for the Resource Group name type RG-LAB-02 and the region under US West US 3
@@ -62,7 +62,8 @@ Next for the Resource Group name type RG-LAB-02 and the region under US West US 
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/c1886bb1-df0e-493b-bf4d-f47648bc9d46"/>
+![5](https://github.com/user-attachments/assets/da793cc5-7315-4f09-a9b9-50f1e3a0a8ab"
+
 </p>
 <p>
 Then go to the Review and Create section and let the validation passed
@@ -70,7 +71,8 @@ Then go to the Review and Create section and let the validation passed
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/328ef8c6-1791-4584-9adf-fbd2ddc9bc0d"/>
+![6](https://github.com/user-attachments/assets/c56a8d6c-eec8-4bf6-99ae-2e16752ebeaa"
+
 </p>
 <p>
 Now go back to Resource Groups and you will see it was created
@@ -78,7 +80,8 @@ Now go back to Resource Groups and you will see it was created
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/55047fc7-28b7-4b98-810f-c9ffb7d900d5"/>
+![7](https://github.com/user-attachments/assets/ba4cfd08-74f2-40ba-8498-c72312aa29e1"
+
 </p>
 <p>
 Type Virtual Machines in the search bar
@@ -87,7 +90,8 @@ Type Virtual Machines in the search bar
 
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/56ba9d47-8215-4b55-acf5-a26652e0a2e0"/>
+![8](https://github.com/user-attachments/assets/6e337c81-a48b-4387-972c-fd1068d5c9cc"
+
 </p>
 <p>
 Now for the Resource Group click the one we created RG-LAB-02.
@@ -95,7 +99,8 @@ Now for the Resource Group click the one we created RG-LAB-02.
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/b0865c84-9f51-426e-8268-41d286ad044c"/>
+![9](https://github.com/user-attachments/assets/91a633b4-dba9-4291-86d6-99e665599dcd"
+
 </p>
 <p>
 Next type the VM name VM1, and the region under US West US 3, the Image under Windows 10 Pro, and the size under Standard E2s
@@ -103,7 +108,8 @@ Next type the VM name VM1, and the region under US West US 3, the Image under Wi
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/a497a209-c4ac-47cc-931f-26d04bfd2878"/>
+![10](https://github.com/user-attachments/assets/00089212-ee88-4587-850a-38c1a4e7ca29"
+
 </p>
 <p>
 Next the username will be named labuser and the password can be your own unique password. The Licensing check the box
@@ -111,7 +117,8 @@ Next the username will be named labuser and the password can be your own unique 
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/90988751-5779-473b-b8de-84b02d40dc9e"/>
+![11](https://github.com/user-attachments/assets/7489ce7c-8076-4717-9dbd-f63cad98b081"
+
 </p>
 <p>
 Now go to the Networking tab and make sure the Virtual Network, Subnet, and Public IP all says (new)
@@ -119,7 +126,8 @@ Now go to the Networking tab and make sure the Virtual Network, Subnet, and Publ
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/23d49724-a9eb-4114-87b9-91b812ac7185"/>
+![12](https://github.com/user-attachments/assets/c64456c2-4500-472b-a8cc-bd2815362f7b"
+
 </p>
 <p>
 Now go to the Review and create tab and click the Create tab on the bottom left
@@ -127,10 +135,12 @@ Now go to the Review and create tab and click the Create tab on the bottom left
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/706080ec-1b1b-4aea-a837-580bc1f7051a"/>
+![13](https://github.com/user-attachments/assets/01d8742a-d3b7-47bd-b904-23cc402c17a3"
+
 </p>
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/710a84ef-0239-48a0-9eff-4d05861e0694"/>
+![14](https://github.com/user-attachments/assets/4a5e08a9-1b92-4244-9e4c-c2f4373d974b"
+
 </p>
 <p>
 Next let the deployment process load, once its done a green check will emerge near the deployment
@@ -138,7 +148,8 @@ Next let the deployment process load, once its done a green check will emerge ne
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/087b7069-7434-4169-86a3-243c5052aa19"/>
+![15](https://github.com/user-attachments/assets/838a526a-51b2-49ff-a14a-5fa0802161b3"
+
 </p>
 <p>
 Next go type Virtual Machine and click VM1
@@ -146,7 +157,8 @@ Next go type Virtual Machine and click VM1
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/5f905f73-3bea-44d9-8c69-1fc3d5f04717"/>
+![16](https://github.com/user-attachments/assets/6d0314ef-597f-4a7a-8391-c063c45f57a3"
+
 </p>
 <p>
 Now click create Azure Virtual Machine 
@@ -154,7 +166,8 @@ Now click create Azure Virtual Machine
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/34471641-08dc-46f6-b7d9-e375507826c8"/>
+![17](https://github.com/user-attachments/assets/400df7dd-9854-4c97-9669-3c51ae23b8f1"
+
 </p>
 <p>
 Next click the Resource group name under RG-LAB-02, the Vritual Machine Name under VM2 and the region US WEST US 3
@@ -162,7 +175,8 @@ Next click the Resource group name under RG-LAB-02, the Vritual Machine Name und
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/12b7e3ea-d98a-499d-9120-c684fa83b381"/>
+![18](https://github.com/user-attachments/assets/44a7ac41-cd59-4262-8162-9138666faa34"
+
 </p>
 <p>
 Now for the Image put Ubuntu Sever Gen2 and the size under Standard E2
@@ -170,7 +184,8 @@ Now for the Image put Ubuntu Sever Gen2 and the size under Standard E2
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/5cec14e8-6b7a-4bf2-b38e-7a086dc5304a"/>
+![19](https://github.com/user-attachments/assets/bace22a6-5c15-48b1-aa55-4d858d9fd974"
+
 </p>
 <p>
 Next for the authentication type click password, under Username type labuser and the password tpye the password
@@ -178,7 +193,8 @@ Next for the authentication type click password, under Username type labuser and
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/d9cc47ae-10b4-4151-9802-f064dec766f0"/>
+![20](https://github.com/user-attachments/assets/4dfce9b4-cc86-4cf1-8ff2-e02f11720ccd"
+
 </p>
 <p>
 Now go to the networking tab and make sure virtual network, subent, and public IP all says (new)
@@ -186,7 +202,8 @@ Now go to the networking tab and make sure virtual network, subent, and public I
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/3317e873-cb0f-4811-bc68-d45161b14ddf"/>
+![21](https://github.com/user-attachments/assets/c3d167fa-3dc2-4840-8e47-0c246b102b14"
+
 </p>
 <p>
 Next go to the Review and create tab and click create at the bottom left
@@ -194,10 +211,12 @@ Next go to the Review and create tab and click create at the bottom left
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/ac445adc-0b2b-4afd-a80f-4cac79202329"/>
+![22](https://github.com/user-attachments/assets/7e8e31e0-053a-4e8a-9719-f8b0ada92d82"
+
 </p>
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/d6588b6f-e9e9-4eb3-9625-5288dd80bdc9"/>
+![23](https://github.com/user-attachments/assets/91e24bf8-54ab-44c0-83f5-00ebed7a501c"
+
 </p>
 <p>
 Now the deployment process will begin. Then once it's done a green check will appear
@@ -206,7 +225,8 @@ Now the deployment process will begin. Then once it's done a green check will ap
 
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/985f1bc1-e23e-4f69-934f-39e3191f736d"/>
+![24](https://github.com/user-attachments/assets/b058a836-7b6b-4a70-9468-dbdee567efb7"
+
 </p>
 <p>
 Next you can upload all the info in a notepad file
@@ -214,7 +234,8 @@ Next you can upload all the info in a notepad file
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/7c7c1e49-e7e2-49f4-bd0f-7719c4fe55bc"/>
+![25](https://github.com/user-attachments/assets/71dabde5-d174-4ceb-8965-5766ecba69c4"
+
 </p>
 <p>
 Next type Virtual Machine in the search bar
@@ -222,10 +243,12 @@ Next type Virtual Machine in the search bar
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/3f609f82-1e60-4995-a335-68817e960034"/>
+![26](https://github.com/user-attachments/assets/91b1a200-7b93-44f5-9989-5f2c68b1cbbe"
+
 </p>
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/b01814be-7d8e-46ac-b115-64ee446e7a7b"/>
+![27](https://github.com/user-attachments/assets/fe0d8740-64f4-40f6-a0fd-7b0d5764574a"
+
 </p>
 <p>
 Next you will see the VM has been created click VM1 and copy the public IP address 
@@ -233,7 +256,8 @@ Next you will see the VM has been created click VM1 and copy the public IP addre
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/1c1882df-c967-4a17-9c3c-e17a758326ee"/>
+![28](https://github.com/user-attachments/assets/560b1644-be4d-42e2-ba8f-ed156c6ad8e2"
+
 </p>
 <p>
 Next type Remote Desktop Connection in the search bar
@@ -241,7 +265,8 @@ Next type Remote Desktop Connection in the search bar
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/4492891b-4d35-438e-841f-7ebfc8d61e3f"/>
+![29](https://github.com/user-attachments/assets/770529e4-93ab-44e7-b963-0469fb78c585"
+
 </p>
 <p>
 Next type the public IP of VM1 in the computer seciton and click the connect buttton
@@ -250,7 +275,8 @@ Next type the public IP of VM1 in the computer seciton and click the connect but
 
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/cf6e558f-9dce-435f-81ed-da213b8aa962"/>
+![30](https://github.com/user-attachments/assets/701cfd92-193d-44cb-adb9-c873d4b42dcd"
+
 </p>
 <p>
 Next type the username as labsuer and the password as the password you created, then click the blue ok button
@@ -258,7 +284,8 @@ Next type the username as labsuer and the password as the password you created, 
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/e9bf21e7-673e-4d12-85f8-6c962879de4c"/>
+![31](https://github.com/user-attachments/assets/dfbc0668-a062-420f-be88-50e34f959591"
+
 </p>
 <p>
 Then click the yes button 
@@ -266,7 +293,8 @@ Then click the yes button
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/aeeeb482-ae64-41f3-84b8-2ba09c6197f7"/>
+![32](https://github.com/user-attachments/assets/0afe1c11-46db-497e-b290-6261d5cbdf5f"
+
 </p>
 <p>
 Then click no for all of the following in the image above
@@ -274,7 +302,8 @@ Then click no for all of the following in the image above
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/53dfbcf4-7bec-4265-b871-5f40ff4bfacb"/>
+![33](https://github.com/user-attachments/assets/9ac4696c-4880-42db-a1a3-38bb0917c219"
+
 </p>
 <p>
 Then once the networking tab loads click the yes button 
@@ -282,7 +311,8 @@ Then once the networking tab loads click the yes button
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/635e5b7f-36f7-445c-b242-3dd7657d5e22"/>
+![34](https://github.com/user-attachments/assets/d2d8b1fb-d7aa-4eb8-b12a-fe998e3febfd"
+
 </p>
 <p>
 Next load Microsoft Excel and click start without yuor data 
@@ -290,7 +320,8 @@ Next load Microsoft Excel and click start without yuor data
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/0b3954de-a815-4925-ab20-281f00b6bdd6"/>
+![35](https://github.com/user-attachments/assets/010af768-b964-4ed9-ab95-b5e4466dd30c"
+
 </p>
 <p>
 Next click continue without this data
@@ -298,7 +329,8 @@ Next click continue without this data
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/7d3ef272-5a59-4762-b478-82853a259fde"/>
+![36](https://github.com/user-attachments/assets/29100910-4f8b-41e0-93a6-413df96521f0"
+
 </p>
 <p>
 Now click confirm and continue 
@@ -306,7 +338,8 @@ Now click confirm and continue
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/9ede1e3a-0f9e-41ad-9055-dc84881b77d6"/>
+![37](https://github.com/user-attachments/assets/0745d60c-3eb5-464a-b4ae-8914b3fbb4e7"
+
 </p>
 <p>
 Next click confirm and start browsing
@@ -314,7 +347,8 @@ Next click confirm and start browsing
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/cc24e06b-d005-44bd-875b-1df9e5ae99eb"/>
+![38](https://github.com/user-attachments/assets/2dce70d4-b96c-400c-a70a-ebb530511b9d"
+
 </p>
 <p>
 Now type download wireshark in the search bar 
@@ -322,7 +356,8 @@ Now type download wireshark in the search bar
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/68b0f045-3074-4433-9c09-985104a61ced"/>
+![39](https://github.com/user-attachments/assets/b323ca9a-69e4-4637-8ca3-f21d6543a8be"
+
 </p>
 <p>
 Now click go to download 
@@ -330,7 +365,8 @@ Now click go to download
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/da49f9cc-3ef1-435d-bac2-b1f6805ff647"/>
+![40](https://github.com/user-attachments/assets/6a036e16-41f7-4fe5-8f61-fac966575cdd"
+
 </p>
 <p>
 Now click windows x64 installer 
@@ -338,7 +374,8 @@ Now click windows x64 installer
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/1950ba4a-ce67-4179-896f-71dba49088d5"/>
+![41](https://github.com/user-attachments/assets/9df32be4-c4ff-46b1-b216-91b9ece796ee"
+
 </p>
 <p>
 Once the process is done click the file to open in or go to file explorer and open the file in the downloads folder
@@ -346,7 +383,8 @@ Once the process is done click the file to open in or go to file explorer and op
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/0ca3e412-11a7-4b93-b22e-95393ece8171"/>
+![42](https://github.com/user-attachments/assets/84b5c73d-11d0-4bb5-9a37-9d3ede41a8af"
+
 </p>
 <p>
 Next go to file explorer and double click Wireshark to load the software
@@ -354,7 +392,8 @@ Next go to file explorer and double click Wireshark to load the software
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/0da125ab-07d5-412f-8a8d-1972c8b5e61b"/>
+![43](https://github.com/user-attachments/assets/b4f4700c-785d-4183-942c-b58fb6f395c8"
+
 </p>
 <p>
 Now click next
@@ -362,7 +401,8 @@ Now click next
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/920504a6-f881-4351-ad3f-2e7a4798fa0c"/>
+![44](https://github.com/user-attachments/assets/14c8b5b3-b248-412d-9302-ab3e8b121323"
+
 </p>
 <p>
 Now click next 
@@ -370,7 +410,8 @@ Now click next
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/b0d455d4-5768-4171-aa8c-44fc7b02bb1d"/>
+![45](https://github.com/user-attachments/assets/8d3fec36-4e0b-418e-bc8b-099d7f1be191"
+
 </p>
 <p>
 Now finally click Install
@@ -378,7 +419,8 @@ Now finally click Install
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/6579f47f-4b85-45c4-8c6b-f21da6d4c310"/>
+![46](https://github.com/user-attachments/assets/a7dcae0a-e870-4082-9bcb-1bc62dd86e1c"
+
 </p>
 <p>
 The installation progess will start
@@ -386,7 +428,8 @@ The installation progess will start
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/a08df02f-f23f-46e1-8cc7-20b1a0f3f53d"/>
+![47](https://github.com/user-attachments/assets/b9390a9b-f4e9-429e-8127-50c01024fedd"
+
 </p>
 <p>
 Once the process is done click finish 
@@ -394,7 +437,8 @@ Once the process is done click finish
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/8bcaf36e-1986-458b-818b-7e093373889e"/>
+![48](https://github.com/user-attachments/assets/e7883eb0-f224-40f9-b2c3-1f5ea98e9476"
+
 </p>
 <p>
 Next type Wireshark in the search bar on the VM, then double click to open the software
@@ -402,7 +446,8 @@ Next type Wireshark in the search bar on the VM, then double click to open the s
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/b1e73cf0-34dc-40f5-8a91-514f283e28f5"/>
+![49](https://github.com/user-attachments/assets/3e9a1676-57b8-4f02-93b9-f94f97674537"
+
 </p>
 <p>
 Next click the Ethernet on Wireshark
@@ -410,7 +455,8 @@ Next click the Ethernet on Wireshark
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/ec25f85b-cb86-48c9-90ce-e246c1757d34"/>
+![50](https://github.com/user-attachments/assets/acadf030-2c99-4a0f-baa5-44c9ce113b94"
+
 </p>
 <p>
 Now go back to Miscrosoft Azure and click VM2, copy the  IP or the Private IP address 
@@ -418,7 +464,8 @@ Now go back to Miscrosoft Azure and click VM2, copy the  IP or the Private IP ad
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/a143350c-05b6-4d87-ab36-647868cb4198"/>
+![51](https://github.com/user-attachments/assets/da942156-a705-4290-aca6-a35cfb6cb411"
+
 </p>
 <p>
 Now open Windows Powershell and type ping (then type the private IP address) Example >>[ping 10.0.0.4] 
@@ -426,7 +473,8 @@ Now open Windows Powershell and type ping (then type the private IP address) Exa
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/5dfc1eec-581d-4529-bec5-c4de82e48f83"/>
+![52](https://github.com/user-attachments/assets/a148f6fe-58cc-49ea-9318-94215442a52a"
+
 </p>
 <p>
 You can see that 4 packets where sent and received
@@ -434,7 +482,8 @@ You can see that 4 packets where sent and received
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/1811defd-3241-4157-a310-8270d5030c69"/>
+![53](https://github.com/user-attachments/assets/e1014465-0cd4-4014-b717-3052914bc2fd"
+
 </p>
 <p>
 Now we can ping a website to see the same results, ping www.google.com
@@ -442,7 +491,8 @@ Now we can ping a website to see the same results, ping www.google.com
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/6c5107dd-1045-499e-824d-0bb4f51a0058"/>
+![54](https://github.com/user-attachments/assets/b02fbe51-4880-4f49-a83a-150345fe3253"
+
 </p>
 <p>
 Next we can do a endless ping by typing ping (then type the private IP address) -t Example >>[ping 10.0.0.4 -t] 
@@ -450,7 +500,8 @@ Next we can do a endless ping by typing ping (then type the private IP address) 
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/70b43316-bb55-4c2c-aab5-dd62312a0fa0"/>
+![55](https://github.com/user-attachments/assets/caf0784c-424e-42fc-830a-5422a59c058c"
+
 </p>
 <p>
 Now go to Microsoft Azure and type Network Security Groups 
@@ -458,7 +509,8 @@ Now go to Microsoft Azure and type Network Security Groups
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/22b4bf7c-925e-4891-bbf4-d812b662ffc5"/>
+![56](https://github.com/user-attachments/assets/50af4dcf-dfc8-41cc-8464-dc4e6047e2d0"
+
 </p>
 <p>
 Next click VM2 and then click +Add 
@@ -466,7 +518,8 @@ Next click VM2 and then click +Add
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/43455509-8482-481d-ade2-fc65ab238c19"/>
+![57](https://github.com/user-attachments/assets/452b24ce-5d32-4672-834b-71b39d3ecc0c"
+
 </p>
 <p>
 Now source can be under any, Protocol you need to click ICMP and the action will be deny, because we are going to deny the endless ping to stop. The priority needs to be lower than all the others for this example I put 200 and the name will be DENYICMPPINGFROMANYWHERE
@@ -474,7 +527,8 @@ Now source can be under any, Protocol you need to click ICMP and the action will
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/eecc1871-c484-428e-aa37-729de07edbb0"/>
+![58](https://github.com/user-attachments/assets/34767b9e-1b69-401f-bea9-44b07c696b48"
+
 </p>
 <p>
 Now if we go back to VM1 we can see the ping stop when can now click Ctrl + C to go back to the home on commandline
@@ -482,7 +536,8 @@ Now if we go back to VM1 we can see the ping stop when can now click Ctrl + C to
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/4c909721-d741-42ec-a722-4258b94c4074"/>
+![59](https://github.com/user-attachments/assets/b19cbff3-d236-4e82-be1f-0f41659ba9e4"
+
 </p>
 <p>
 Next type ssh in the search bar in Wireshark to see ssh traffic (SSH Stands for Secure Shell)
@@ -490,7 +545,8 @@ Next type ssh in the search bar in Wireshark to see ssh traffic (SSH Stands for 
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/aa488c98-ed3b-4ef0-9696-10f884091246"/>
+![60](https://github.com/user-attachments/assets/f98cb174-301d-4ac1-ac60-d7cba143b64d"
+
 </p>
 <p>
 Next type dns in the search bar in Wireshark to see dns traffic (DNS stands for Domain Name Systems)
@@ -498,7 +554,8 @@ Next type dns in the search bar in Wireshark to see dns traffic (DNS stands for 
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/38f57097-6744-4d0d-aa05-83c845dcc95b"/>
+![61](https://github.com/user-attachments/assets/36cbafc5-b963-463f-a7fb-5b65a8533e41"
+
 </p>
 <p>
 Next type rdp in the search bar in Wireshark to see rdp traffic (RDP stands for Romote Desktop Protocol)
@@ -506,7 +563,8 @@ Next type rdp in the search bar in Wireshark to see rdp traffic (RDP stands for 
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/ee6b6f1b-a2c8-4e8c-9711-aa900170fae9"/>
+![62](https://github.com/user-attachments/assets/356f0a70-8fb8-4f19-beb2-245119c3e00a"
+
 </p>
 <p>
 Next each of these protocols have port numbers type tcp.port==22 this port is for ssh Secure Shell
@@ -514,7 +572,8 @@ Next each of these protocols have port numbers type tcp.port==22 this port is fo
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/de202578-c687-49a5-bf17-09457ffa69dc"/>
+![63](https://github.com/user-attachments/assets/8fd00a30-4d4e-488a-97d1-88757ee04ae3"
+
 </p>
 <p>
 Next type udp.port==53 this port is for dns Domain Name System
@@ -522,7 +581,8 @@ Next type udp.port==53 this port is for dns Domain Name System
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/0d6df577-0e3d-4116-a6a7-6130841f43e4"/>
+![64](https://github.com/user-attachments/assets/b3840aef-54f7-46ef-b542-489af77233c5"
+
 </p>
 <p>
 Next type tcp.port==3389 this port is for rdp Romote Desktop Protocol
@@ -530,7 +590,8 @@ Next type tcp.port==3389 this port is for rdp Romote Desktop Protocol
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/c0335500-65a3-47e8-a3b7-f36f48e02c50"/>
+![65](https://github.com/user-attachments/assets/1764e6ae-dfcd-446b-8e84-1206945d79b8"
+
 </p>
 <p>
 Now go back to Microsoft Azure and copy the Public IP address or the Private IP address of VM2 
@@ -538,7 +599,8 @@ Now go back to Microsoft Azure and copy the Public IP address or the Private IP 
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/85c0824e-6a6c-47b3-a083-55568f64497f"/>
+![66](https://github.com/user-attachments/assets/9c2f05cb-250e-491f-8fa8-aa5ffbc6f7f9"
+
 </p>
 <p>
 Now go back to VM1 and type ssh labuser@ Public IP Address or Private IP Address. So this is using ssh to take into VM2 through VM1. ssh then the name of the VM which was labuser, then type the private or public IP address. Next type yes to allow the connection. Then type in your password the password wont show on the screen just have faith you are typing it correctly then press ENTER
@@ -546,7 +608,8 @@ Now go back to VM1 and type ssh labuser@ Public IP Address or Private IP Address
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/951bd9f2-b930-4794-95fe-a839698959d7"/>
+![67](https://github.com/user-attachments/assets/760cd055-5cc1-4f5a-93b1-5d9133552e3b"
+
 </p>
 <p>
 You will know it worked if you see a green name under labuser@VM2. Next type pwd (Print Working Directory) to show the directory 
@@ -554,7 +617,8 @@ You will know it worked if you see a green name under labuser@VM2. Next type pwd
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/bb8ef7c0-260e-4b36-9f55-784ca71ffd64"/>
+![68](https://github.com/user-attachments/assets/7d312443-e1ec-426b-9313-b96403d963ae"
+
 </p>
 <p>
 Now type id to show all the identification in VM2
@@ -562,7 +626,8 @@ Now type id to show all the identification in VM2
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/f80f6995-17a1-495a-8725-c27d685cb620"/>
+![69](https://github.com/user-attachments/assets/a188cb32-97c2-42e8-a259-4287a5d714b0"
+
 </p>
 <p>
 Now type ip to see all the list of ip commands 
@@ -570,7 +635,8 @@ Now type ip to see all the list of ip commands
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/c1430caa-5ec1-433f-9a21-05d6412f41ca"/>
+![70](https://github.com/user-attachments/assets/db2fd451-1250-41aa-a773-1aaa3a8f9262"
+
 </p>
 <p>
 Now to create a txt file we can type touch hi.txt this will create a hi txt file 
@@ -578,7 +644,8 @@ Now to create a txt file we can type touch hi.txt this will create a hi txt file
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/58630770-e854-438d-ae72-e55381a24ca4"/>
+![71](https://github.com/user-attachments/assets/a3798fd0-05c9-4360-88fd-60ddf5456f99"
+
 </p>
 <p>
 Now to see the txt file we just created type ls -lasth
@@ -586,7 +653,8 @@ Now to see the txt file we just created type ls -lasth
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/5c50bc61-e67a-4763-b2c7-4d2078d7e89c"/>
+![72](https://github.com/user-attachments/assets/72c67c0e-8aad-4c50-b5ff-8f5f7199928a"
+
 </p>
 <p>
 Now we can also create multiple files at once by typing touch hi my name is. Anything after touch will be its own file created. Then type ls -lasth to see the files
@@ -594,7 +662,8 @@ Now we can also create multiple files at once by typing touch hi my name is. Any
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/ccf9e494-b5fd-46a4-9518-c36cc178d697"/>
+![73](https://github.com/user-attachments/assets/1bfe0de5-0dec-4612-ba8a-cd6d9094768f"
+
 </p>
 <p>
 Now type uname -a this shows a string with all the os info running on it
@@ -602,7 +671,8 @@ Now type uname -a this shows a string with all the os info running on it
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/137ce63c-ccf4-4bab-a5ad-516ef726b840"/>
+![74](https://github.com/user-attachments/assets/36d500d8-bad0-41dc-84ff-0e95f7e2170e"
+
 </p>
 <p>
 Now to exit out of VM2 type exit 
@@ -610,7 +680,8 @@ Now to exit out of VM2 type exit
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/65e27c16-2fc4-4d7c-b85a-2ad49e161775"/>
+![75](https://github.com/user-attachments/assets/7f440874-4263-4c06-a9d3-f2d53f34f916"
+
 </p>
 <p>
 Next out of VM2 in the command line type nslookup this shows the IP or the DNS
@@ -618,7 +689,8 @@ Next out of VM2 in the command line type nslookup this shows the IP or the DNS
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/32fd1c33-f37d-4ff5-85b0-5c67f30cce3d"/>
+![76](https://github.com/user-attachments/assets/ece5574b-bad2-4d54-9799-28bd0744ac2f"
+
 </p>
 <p>
 Next type ipconfig in the command line this shows the current TCP/ IP also machine IP
@@ -626,7 +698,8 @@ Next type ipconfig in the command line this shows the current TCP/ IP also machi
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/54752c57-d5eb-4c50-81fd-8a4cbbdf816d"/>
+![77](https://github.com/user-attachments/assets/be2e1578-6763-4f70-9fed-97ce5ce5cd69"
+
 </p>
 <p>
 Now go back to Microsoft Azure and go to the Resource Groups we created. Click RG-LAB-02 and retype it in the delete section, then click the red delete button
@@ -634,7 +707,8 @@ Now go back to Microsoft Azure and go to the Resource Groups we created. Click R
 <br />
 
 <p>
-<img src="https://github.com/Jacobvillagomez1/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/assets/143027686/68037d2b-ea6b-444b-97b9-6f4c90bb6877"/>
+![78](https://github.com/user-attachments/assets/a38408db-a501-4dcf-98e4-c1fc8faae036"
+
 </p>
 <p>
 Now go to the NetworkWatcherRG and delete that one as well
